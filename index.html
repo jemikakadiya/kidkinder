@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>my website</title>
+    <link rel="stylesheet" href="./all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .logo img {
+            width: 20rem;
+            cursor: pointer;
+
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            align-items: center;
+            background-color: #F8F9FA;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            gap: 5rem;
+            font-size: 25px;
+            cursor: pointer;
+            text-transform: capitalize;
+            font-weight: 550;
+        }
+
+        .main-con {
+            display: flex;
+            justify-content: space-between;
+            gap: 6rem;
+            padding: 50px;
+        }
+
+        .banner-img {
+            width: 50%;
+        }
+
+        .banner-img img {
+            width: 100%;
+        }
+
+        .banner-content {
+            text-align: justify;
+            font-size: 1.5rem;
+            width: 50%;
+            margin-top: 10rem;
+        }
+
+        .abc {
+            text-decoration: none;
+            border: 3PX solid;
+            border-radius: 1rem;
+            padding: 5px 30px;
+            background-color: #00394F;
+            color: white;
+        }
+
+        .abc:hover {
+            background-color: black;
+        }
+
+        .con-btn {
+            /* align-items: center; */
+            text-decoration: none;
+            border: 1PX solid;
+            border-radius: 30px;
+            background-color: #17A2B8;
+            color: white;
+            padding: 0.375rem 0.75rem;
+            font-weight: 400;
+            text-align: center;
+            padding: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .con-btn:hover {
+            background-color: #00394f;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+            font-weight: 500;
+            padding-bottom: 2rem;
+            color: rgb(0, 57, 79)
+        }
+
+        .about-img {
+            display: flex;
+            margin: 0 3rem 0 3rem;
+        }
+
+        .main-about {
+            background-color: #17A2B8;
+            color: #F8F9FA;
+        }
+
+        .about-lorem {
+            font-size: 1.5rem;
+            text-align: justify;
+            padding-top: 3rem;
+            margin: 0 3rem 0 3rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .first-img {
+            display: flex;
+            width: 25%;
+        }
+
+        .first-img img {
+            width: 21rem;
+            margin-right: 3rem;
+            margin-left: 3rem;
+
+        }
+
+        .contact {
+            border: 1px solid gray;
+            width: 50rem;
+            justify-content: center;
+            margin: 3rem 17rem 7rem;
+        }
+
+        .sec-type {
+            text-align: center;
+            padding: 5rem 2rem;
+            font-family: "Handlee", cursive;
+            font-size: 3rem;
+            color: #17A2B8;
+            font-weight: 500;
+            max-lines: 1rem;
+        }
+
+        .tabalo-cn {
+            box-sizing: border-box;
+            border: 10rem;
+            background-color: #17A2B8;
+        }
+
+        .TABLE-FORM {
+            text-align: justify;
+            font-size: 1.5rem;
+            flex-direction: column;
+            margin-top: 2rem;
+        }
+
+        .book-btn {
+            text-align: center;
+            padding-top: 3rem;
+        }
+
+        .book-btn button {
+            background-color: #00394F;
+            border-radius: 1rem;
+            padding: 0.5rem;
+            color: white;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .book-btn button:hover {
+            background-color: black;
+        }
+
+        .book-btn button span {
+            font-size: 2rem;
+        }
+
+        /* <!-- testimonial section  --> */
+        .main-test {
+            display: flex;
+            width: 100%;
+            gap: 3rem;
+        }
+
+        .test-img img {
+            width: 100%;
+            padding: 1rem;
+        }
+
+        .def {
+            width: 33%;
+            background-color: #F8F9FA;
+        }
+
+        .test-con {
+            text-align: center;
+            font-family: 'Handlee', cursive;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #00394f;
+
+        }
+
+        .test-con:hover {
+            color: skyblue;
+        }
+
+        .text-word {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #666;
+            text-align: center;
+            margin: 1rem;
+        }
+
+        .mar-typing {
+            font-size: 5rem;
+            font-family: 'Handlee', cursive;
+            background-color: #00394F;
+            color: white;
+            padding-bottom: 10rem;
+
+        }
+
+        .main-last {
+
+            display: flex;
+        }
+
+        .btn {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .btn-us {
+            margin-top: 2rem;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #00394F;
+            color: white;
+            padding: 2rem;
+        }
+
+        .footer-content {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding-bottom: 3rem;
+        }
+
+        .scl-content,
+        .touch-content,
+        .link-content,
+        .form-content {
+            width: 25%;
+            padding: 1rem;
+        }
+
+        .scl-content img {
+            margin-bottom: 1rem;
+        }
+
+        .scl-content p {
+            font-size: 18px;
+            line-height: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .scl-content .scl-icons {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .scl-content .scl-icons .icon-img {
+            border: 1px solid #17A2B8;
+            padding: 5px;
+            border-radius: 50%;
+            cursor: pointer;
+            color: #17A2B8;
+            /* width: 1rem; */
+        }
+
+        .footer .scl-icons .icon-img :hover {
+            background-color: #e64b30;
+        }
+
+        .touch-content .touch-con-details {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+            align-items: center;
+        }
+
+        .touch-typ {
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+            font-family: "Handlee", cursive;
+            font-weight: bold;
+            line-height: 1.2;
+            color: #17a2b8;
+        }
+
+        .touch-logo {
+            font-weight: 900;
+            font-size: 1.5rem;
+            color: #17A2B8;
+        }
+
+        .get-type {
+            margin-bottom: 0.5rem;
+            font-family: "Handlee", cursive;
+            font-weight: bold;
+            line-height: 1.2;
+            font-size: 1.25rem class="last-typing";
+        }
+
+        .last-typing {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: left;
+        }
+
+
+        .first-link {
+            font-family: "Handlee", cursive;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            font-size: 1.75rem;
+            color: #17a2b8;
+        }
+
+        .icon-edit {
+            font-weight: 900;
+            line-height: 1;
+            font-size: 0.75rem;
+        }
+
+        .link-symbol {
+            display: flex;
+            gap: 0.5rem;
+            font-weight: 400;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            line-height: 1.5rem;
+            text-align: left;
+            font-family: "Nunito", sans-serif;
+            align-items: center;
+        }
+
+        .link-symbol:hover {
+            text-decoration: underline;
+        }
+
+        .form-type {
+            color: #17a2b8;
+            margin-bottom: 1.5rem;
+            font-size: 1.75rem;
+            font-family: "Handlee", cursive;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        .form {
+            width: 100%;
+        }
+
+        .form-adit-content {
+            padding: 0.375rem 0;
+        }
+
+        .in {
+            border-radius: 5px;
+            border: none;
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 1rem;
+        }
+
+        .submit-btn {
+            width: 100%;
+            margin-top: 0.5rem;
+            padding: 1.2rem 3rem;
+            border-radius: 50rem;
+            border: none;
+            background-color: #17a2b8;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #117180;
+        }
+
+        .submit-btn span {
+            font-size: 1rem;
+            color: white;
+        }
+
+        .footer-details {
+            border-top: 1px solid #17A2B8;
+            border-width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .footer-details a {
+            color: #17a2b8;
+            font-weight: 600;
+            font-family: "Handlee", cursive;
+        }
+
+        .footer-details a:hover {
+            color: #117180;
+            text-decoration: underline;
+        }
+
+        .main-footer {
+            padding-top: 5rem;
+        }
+
+
+        /* table tag */
+        .main-tbl {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-tbl .tbl-kids {
+            display: flex;
+        }
+
+        .main-tbl .tbl-kids:nth-child(1),
+        .main-tbl .tbl-kids:nth-child(2),
+        .main-tbl .tbl-kids:nth-child(3) {
+            border-bottom: 1px solid gray;
+        }
+
+        .frt-tr {
+            border-right: 1px solid gray;
+            font-weight: bolder;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #666666;
+
+        }
+
+        .sec-tr {
+            padding-bottom: 0.25rem;
+            padding-top: 0.25rem;
+            font-family: "Nunito", sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #666666;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- home section -->
+
+    <section class="home">
+        <header>
+            <div class="logo">
+                <img src="./student.png" alt="logo">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>testimonial</li>
+                    <li>contact</li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="main-con">
+            <div class="banner-content">
+                <h2>kids larning center</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas totam vero sunt aperiam distinctio
+                    laborum cobitictio c labore quam aut dignissimos ducimus. Dignissimos expedita harum
+                    laborum cobitictio asriores fugit voluptatum susci laborum cobitictio asriores fugit voluptatum
+                    suscip
+                </p>
+                <div class="btn-us">
+                    <a href="#" class="abc"><span>contact us</span></a>
+                </div>
+            </div>
+
+            <div class="banner-img">
+                <img src="./abcdefghijkl.jpg" alt="Banner Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about">
+        <div class="main-about">
+            <div class="about-img">
+
+                <div>
+                    <p style="font-family: 'Handlee', cursive; font-size: 1.5rem; font-weight: bold; margin-top: 3rem;">
+                        kids Learning
+                        center </p>
+                    <p style="font-family: 'Handlee', cursive; font-weight: 700; font-size: 4.5rem; ">New Approach to
+                        Kids Education</p>
+                    <p style="font-size: 24px; font-weight: 500; margin-top: 3rem">Sea ipsum kasd eirmod kasd magna, est
+                        sea et diam
+                        ipsum est amet sed sit. Ipsum dolor no justo dolor et, lorem ut dolor erat dolore sed ipsum at
+                        ipsum nonumy amet. Clita lorem dolore sed stet et est justo dolore.
+                    </p>
+                </div>
+                <div>
+                    <img src="./header.png" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="about-lorem">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil similique, tempore beatae suscipit quam
+                delectus eos doloribus vitae eius cupiditate eveniet saepe id exercitationem accusantium illum, eligendi
+                rerum, sequi ea voluptatum et vel deleniti laborum voluptatem! Magni explicabo facilis iste minus dicta,
+                doloribus eligendi recusandae omnis consequuntur reprehenderit provident tempore facere deserunt,
+                repellat eos sapiente quas aspernatur modi? Quaerat hic quidem sed numquam, in ab aliquid voluptatum
+                minus, soluta cumque, esse quisquam repellendus sequi sunt fugiat rem odit expedita! Laboriosam harum
+                modi, repellendus error adipisci ratione consequuntur minima quae esse? Doloremque dom soluta sunt eum
+                nesciunt.</p>
+            <p style="text-align: center; color: #17A2B8; padding-top: 3rem;">------POPULAR CLASSES------</p>
+            <P
+                style="text-align: center; font-family:'Handlee', cursive; font-weight: bold; color: #00394f;  padding-top: 2.5rem;">
+                Classes for Your Kids</P>
+
+        </div>
+
+
+
+    </section>
+    <section class="main-test">
+        <div class="def">
+            <div class="test-img">
+                <img src="./class-1.jpg" alt="class1">
+            </div>
+            <div class="test-con">
+                <p>Drawing Class</p>------------
+            </div>
+            <div class="text-word">
+                <p style="padding-top: 1rem;">* Justo ea diam stet diam ipsum no sit, ipsum vero et et diam ipsum duo et
+                    no et, ipsum ipsum erat duo amet clita duo</p>
+                <p style="padding-top: 1rem;">* Learning, Play, Fun, Friends, Explore, Grow, Caring, Safe, Happy,
+                    Nurture</p>
+            </div>
+
+            <div class="main-tbl">
+                <div>
+                    <div class="tbl-kids">
+                        <div class="frt-tr" style="padding: 0rem 1.09rem;">Age of Kids</div>
+                        <div class="sec-tr" style="padding-left: 1rem;">3 - 6 Years</div>
+                    </div>
+                    <div class="tbl-kids">
+                        <div class="frt-tr" style="padding: 0rem 1.29rem;">Total Seats</div>
+                        <div class="sec-tr" style="padding-left: 1rem;">40 Seats</div>
+                    </div>
+                    <div class="tbl-kids">
+                        <div class="frt-tr" style="padding: 0rem 1.24rem;">Class Time</div>
+                        <div class="sec-tr" style="padding-left: 1rem;">08:00 - 10:00</div>
+                    </div>
+                    <div class="tbl-kids">
+                        <div class="frt-tr" style="padding: 0rem 1.33rem;">Tution Fee</div>
+                        <div class="sec-tr" style="padding-left: 1rem;">$290 / Month</div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <a href="#" class="con-btn"><span>Join Now</span></a>
+            </div>
+        </div>
+        <div class="def">
+            <div class="test-img">
+                <img src="./class-2.jpg" alt="class2">
+            </div>
+            <div class="test-con">
+                <p>Language Learning</p>-------
+            </div>
+            <div class="text-word">
+                <p style="padding-top: 1rem;">* Justo ea diam stet diam ipsum no sit, ipsum vero et et diam ipsum duo et
+                    no et, ipsum ipsum erat duo amet clita duo</p>
+                <p style="padding-top: 1rem;">* Learning, Play, Fun, Friends, Explore, Grow, Caring, Safe, Happy,
+                    Nurture</p>
+            </div>
+
+            <div class="main-tbl">
+                <div>
+                    <div class="tbl-kids">
+                        <div class="frt-tr" style="padding: 0rem 1.09rem;">Age of Kids</div>
+                        <div class="sec-tr" style="padding-left: 1rem;">3 - 6 Years</div>
+                    </div>
+                    <div class="tbl-kids">
+                        <div class="frt-tr" style="padding: 0rem 1.26rem;">Total Seats</div>
+                        <div class="sec-tr" style="padding-left: 1rem;">40 Seats</div>
+                    </div>
+                    <div class="tbl-kids">
+                        <div class="frt-tr" style="padding: 0rem 1.24rem;">Class Time</div>
+                        <div class="sec-tr" style="padding-left: 1rem;">08:00 - 10:00</div>
+                    </div>
+                    <div class="tbl-kids">
+                        <div class="frt-tr" style="padding: 0rem 1.30rem;">Tution Fee</div>
+                        <div class="sec-tr" style="padding-left: 1rem;">$290 / Month</div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <a href="#" class="con-btn"><span>Join Now</span></a>
+            </div>
+        </div>
+
+        <div class="def">
+            <div class="test-img">
+                <img src="./class-3.jpg" alt="class3">
+            </div>
+            <div class="test-con">
+                <p>Basic Science</p>---------
+            </div>
+            <div class="text-word">
+                <p style="padding-top: 1rem;">* Justo ea diam stet diam ipsum no sit, ipsum vero et et diam ipsum duo et
+                    no et, ipsum ipsum erat duo amet clita duo</p>
+                <p style="padding-top: 1rem;">* Learning, Play, Fun, Friends, Explore, Grow, Caring, Safe, Happy,
+                    Nurture</p>
+            </div>
+
+            <div class="main-tbl">
+                <div>
+                    <div class="tbl-kids">
+                        <div class="frt-tr" style="padding: 0rem 1.10rem;">Age of Kids</div>
+                        <div class="sec-tr" style="padding-left: 1rem;">3 - 6 Years</div>
+                    </div>
+                    <div class="tbl-kids">
+                        <div class="frt-tr" style="padding: 0rem 1.26rem;">Total Seats</div>
+                        <div class="sec-tr" style="padding-left: 1rem;">40 Seats</div>
+                    </div>
+                    <div class="tbl-kids">
+                        <div class="frt-tr" style="padding: 0rem 1.24rem;">Class Time</div>
+                        <div class="sec-tr" style="padding-left: 1rem;">08:00 - 10:00</div>
+                    </div>
+                    <div class="tbl-kids">
+                        <div class="frt-tr" style="padding: 0rem 1.33rem;">Tution Fee</div>
+                        <div class="sec-tr" style="padding-left: 1rem;">$290 / Month</div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <a href="#" class="con-btn"><span>Join Now</span></a>
+            </div>
+        </div>
+
+
+
+    </section>
+    <!-- contact us section -->
+    <div class="sec-type">
+        <p>*Please read the above fill in the form below.*</p>
+    </div>
+    <section class="contact" style="box-sizing: border-box;">
+
+        <div class="tabalo-cn">
+            <div>
+
+                <p
+                    style="margin: 0; font-family:'Handlee', cursive; font-size: 2.5rem; text-align: center; background-color: #00394F; color: white;">
+                    Book A Seat</p>
+            </div>
+            <div>
+                <div class="TABLE-FORM">
+                    <div style="padding: 0 1rem 1rem;">
+
+                        <input class="in" type="name" name="fullname" placeholder="Your name">
+                    </div>
+                    <div style="padding: 0 1rem 1rem;">
+
+                        <input class="in" type="Email" name="email" placeholder="E-mail">
+                    </div>
+
+                    <div style="padding: 0 1rem 1rem;">
+
+                        <input class="in" type="number" name="mobil number" placeholder="number">
+                    </div>
+
+                    <div style="padding: 0 1rem 1rem;">
+
+                        <input class="in" type="text" name="address" placeholder="address">
+                    </div>
+
+
+                    <div style="padding: 0 1rem 1rem;">
+                        <select class="in"
+                            style="font-size: 1rem ; width: 100%; cursor: pointer;font-weight: 400; text-align: center; color: gray; ">
+                            <option value="">Selected class</option>
+                            <option value="">class-1</option>
+                            <option value="">class-2</option>
+                            <option value="">class-3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="book-btn">
+                    <button>
+                        <span>Submit</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    </div>
+    <!--  Last footer -->
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="scl-content">
+                <div>
+                    <img src="./student.png" alt="image">
+                </div>
+                <p>Labore dolor amet ipsum ea, erat sit ipsum duo eos. Volup amet ea dolor et magna dolor, elitr rebum
+                    duo est sed diam elitr. Stet elitr stet diam duo eos rebum ipsum diam ipsum elitr.
+                </p>
+                <div class="scl-icons">
+                    <i class="fa-brands fa-twitter icon-img"></i>
+                    <i class="fa-brands fa-facebook icon-img"></i>
+                    <i class="fa-brands fa-instagram icon-img"></i>
+                    <i class="fa-brands fa-linkedin-in icon-img"></i>
+                </div>
+            </div>
+
+            <div class="touch-content">
+                <div class="touch-typ">Get in Touch</div>
+                <div class="touch-con-details">
+                    <div class="touch-logo">
+                        <i class="fa-solid fa-location-dot"> </i>
+                    </div>
+                    <div>
+                        <h3 class="get-type">Address</h3>
+                        <p class="last-typing">123 Street, New York, USA</p>
+                    </div>
+                </div>
+                <div class="touch-con-details">
+                    <div class="touch-logo">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h3 class="get-type">Email</h3>
+                        <p class="last-typing">info@example.com</p>
+                    </div>
+                </div>
+                <div class="touch-con-details">
+                    <div class="touch-logo">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <h3 class="get-type">Phone</h3>
+                        <p class="last-typing">+012 345 67890</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="link-content">
+                <div class="first-link">Quick Links</div>
+                <div class="link-lesthen">
+                    <ul>
+                        <div class="link-symbol">
+                            <i class="fa-solid fa-greater-than icon-edit"></i>
+                            <li>Home</li>
+                        </div>
+                        <div class="link-symbol">
+                            <i class="fa-solid fa-greater-than icon-edit"></i>
+                            <li>About us</li>
+                        </div>
+                        <div class="link-symbol">
+                            <i class="fa-solid fa-greater-than icon-edit"></i>
+                            <li>Our Classes</li>
+                        </div>
+                        <div class="link-symbol">
+                            <i class="fa-solid fa-greater-than icon-edit"></i>
+                            <li>Our Teachers</li>
+                        </div>
+                        <div class="link-symbol">
+                            <i class="fa-solid fa-greater-than icon-edit"></i>
+                            <li>Our Blog</li>
+                        </div>
+                        <div class="link-symbol">
+                            <i class="fa-solid fa-greater-than icon-edit"></i>
+                            <li>Contact us</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="form-content">
+                <div class="form-type">Newsletter</div>
+                <div class="form">
+                    <div class="form-adit-content">
+                        <input class="in" type="name" name="fullname" placeholder="Your name">
+                    </div>
+                    <div class="form-adit-content">
+                        <input class="in" type="name" name="email" placeholder="Your Email">
+                    </div>
+                </div>
+                <div>
+                    <button class="submit-btn"><span>Submit now</span></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-details">
+            <p>
+                &copy; <a href="">Your Site Name.</a> All Rights Reserved. Designed by <a href="">HTML Codex</a>
+            </p>
+            <p>
+                Distributed By: <a href="">ThemeWagon</a>
+            </p>
+        </div>
+    </footer>
+    <script src="./all.min.js"></script>
+</body>
+
+</html>
